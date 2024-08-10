@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tile Flip</title>
+
+</head>
+
+<body>
+  <audio autoplay id="winner">
+    <source src="files/audio/success-1-6297.mp3" type="audio/mpeg">
+  </audio>
+  <div class="all" style="background-image: url('files/images/output-onlinepngtools.png');
+  background-size: contain;
+  background-repeat: no-repeat;    
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ">
+    <div class="winImage">
+      <img src="files/images/Screenshot_2024-07-31_150458-removebg-preview.png" alt="">
+    </div>
+
+    <a href="memory.html">
+      <button style="
+          background: linear-gradient(90deg, rgba(255,0,39,1) 0%, rgba(30,19,215,1) 100%);
+          margin-right: 10px;
+          color: white;
+          font-size: 20px;
+          font-weight: 700;
+          width: 180px;
+          height: 50px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          ">Play Again</button>
+    </a>
+
+  </div>
+
+  <script>
+    const winner = document.getElementById('winner');
+    const v = 1;
+    if (v === 1) {
+      winner.play();
+    }
+  </script>
+</body>
+
+</html>
