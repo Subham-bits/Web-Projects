@@ -7,6 +7,7 @@ const winner = document.getElementById('winner');
 const title = document.querySelector('.contain');
 const guesses = document.querySelector('#guess');
 const container = document.querySelector('.boxx');
+const user = document.querySelector('#users');
 
 
 
@@ -23,9 +24,9 @@ container.addEventListener('click', returnIndex);
 
 // Constants and Arrays
 
-import { name1, name2 } from './login.js';
-console.log(name1,name2);
-console.log(name2);
+const usrname = localStorage.getItem('username');
+const fullName = localStorage.getItem('fullName');
+
 const count = 36;
 const min = 1;
 const max = 37;
@@ -108,6 +109,8 @@ function check(i, j, pairs) {
         if (matchedPairs == 18) {
             setTimeout(() => winner.play(), 300);
             setTimeout(() => window.location.href = 'win.html', 500);
+            localStorage.removeItem('username');
+            localStorage.removeItem('fullName');
         }
         
         return 1;
@@ -160,4 +163,7 @@ function showRandom() {
 }
 
 // Initialize
+document.addEventListener("DOMContentLoaded", (event) => {
+    user.innerHTML = usrname;
+  });
 showRandom();

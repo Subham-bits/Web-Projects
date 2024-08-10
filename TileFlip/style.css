@@ -34,10 +34,41 @@ body{
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.37);
     padding: 10px 25px ;
     cursor: pointer;
+    margin-right: 600px;
+}
+
+.User{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff6f;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px 25px 10px 10px ;
+    cursor: pointer;
+    margin-left: 15px;
+}
+#profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.625);
+    background-image: url("profile-1341-svgrepo-com.svg");
+    border: 1px solid black;
+    background-size: contain;
+    background-origin: content-box;
+    padding: 5px;
+    background-repeat: no-repeat;
 }
 .title{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
     margin-top: 10px;
 }
 
